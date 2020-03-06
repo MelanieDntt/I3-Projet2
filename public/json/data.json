@@ -1,0 +1,305 @@
+[
+  {
+    "id": "anastasia-beverly-hills-modern-renaissance-palette",
+    "brand": "Anastasia Beverly Hills",
+    "category": "eyes",
+    "type": "eyeshadow palette",
+    "name": "Modern Renaissance",
+    "description": "Anastasia Beverly Hills Modern Renaissance Eyeshadow Palette is an essential eyeshadow palette featuring 14 full-pigment shades ranging from neutral to berry-red eyeshadow hues in matte and metallic finishes. Inspired by the resins and paints of Renaissance art, this professional-quality eye makeup collection features an easy-to-blend formula in a versatile color range for creating endless eyeshadow looks, from subtle to dramatic pops of color. Included in the Modern Renaissance Eyeshadow Palette is a dual-ended brush and large mirror housed inside travel-friendly packaging.",
+    "price": 49,
+    "img": ["/img/abh-modernrenaissance.jpg", "/img/abh-modernrenaissance2.jpg"]
+  },
+  {
+    "id": "anastasia-beverly-hills-amrezy-palette",
+    "brand": "Anastasia Beverly Hills",
+    "category": "eyes",
+    "type": "eyeshadow palette",
+    "name": "Amrezy Palette",
+    "description": "A limited-edition palette by Anastasia Beverly Hills’ that features 16 all-new shades so you can achieve everything from go-to daytime to ultra-glamorous looks.",
+    "price": 55,
+    "img": [
+      "/img/abh-amrezypalette.jpg",
+      "/img/abh-amrezypalette2.jpg",
+      "/img/abh-amrezypalette3.jpg",
+      "/img/abh-amrezypalette4.jpg"
+    ]
+  },
+  {
+    "id": "anastasia-beverly-hills-brow-wiz",
+    "brand": "Anastasia Beverly Hills",
+    "category": "eyes",
+    "type": "brows",
+    "name": "Brow Wiz",
+    "description": "An ultra-slim, retractable pencil for precise detailing and creating hair-like strokes.",
+    "price": 26,
+    "img": ["/img/abh-browwiz.jpg", "/img/abh-browwiz2.jpg"]
+  },
+  {
+    "id": "beautyblender-original",
+    "brand": "Beautyblender",
+    "category": "accessories",
+    "type": "sponge",
+    "name": "Original Beautyblender",
+    "description": "The original Beautyblender, this has become a beauty phenomenon – with its elliptical shape and super-strong sponge material allowing for flawless application of foundation, primer and BB/CC creams, it's a definite make up bag must-have. This gorgeous fuchsia incarnation will add an instant splash of colour to your cosmetic collection, applying and blending all kinds of make up products perfectly. Completely edgeless, it blends beautifully across large areas, as well as reach the smaller contours of your face. Just make sure you wet it first so that the material expands and won’t absorb your product – meaning it will end up on your face, not on the sponge. It's latex-free, non-irritating, non-allergenic, odourless, long-lasting and easily washable.",
+    "price": 16.9,
+    "img": [
+      "/img/beautyblender-original.jpg",
+      "/img/beautyblender-original2.jpg"
+    ]
+  },
+  {
+    "id": "colourpop-champagne-bubbles-liquid-highlighter",
+    "brand": "ColourPop",
+    "category": "face",
+    "type": "highlighter",
+    "name": "Champagne Bubbles Liquid Highlighter",
+    "description": "This glowing liquid highlighter creates a luminous, soft focus finish that adds the perfect glow to your look. Infused with micro-fine diamond powder, the formula blends easily and seamlessly into the skin and wears well both under makeup or over foundation. Raise your glass to glowing skin all year long!",
+    "price": 11,
+    "img": [
+      "/img/colourpop-champagnebubble.jpg",
+      "/img/colourpop-champagnebubble2.jpg"
+    ]
+  },
+  {
+    "id": "colourpop-pretty-fresh-hyaluronic-acid-tinted-moisturizer",
+    "brand": "ColourPop",
+    "category": "face",
+    "type": "foundation",
+    "name": "Pretty Fresh Hyaluronic Acid Tinted Moisturizer",
+    "description": "ColourPop Pretty Fresh Tinted Moisturizer is a hydrating, oil-free tinted moisturizer with lightweight coverage that evens skintone and leaves your skin looking fresh and healthy. Formulated with hyaluronic acid (aka HA) and coconut water to support skin hydration without adding oil, this tinted moisturizer works for all skin types and makeup styles - just customize your routine to create your own look!",
+    "price": 13,
+    "img": [
+      "/img/colourpop-prettyfreshfoundation.jpg",
+      "/img/colourpop-prettyfreshfoundation2.jpg"
+    ]
+  },
+  {
+    "id": "luxie-face-essential-brush-set-rose-gold",
+    "brand": "Luxie",
+    "category": "accessories",
+    "type": "brush set",
+    "name": "Face Essential Brush Set - Rose Gold",
+    "description": "The Luxie Face Essentials Set was created to give you a complete, airbrushed face base. You'll buff, blend, contour, and set your way to an airbrushed, definied face.",
+    "price": 85,
+    "img": ["/img/luxie-faceessential.png", "/img/luxie-faceessential2.png"]
+  },
+  {
+    "id": "luxie-eye-essential-brush-set-rose-gold",
+    "brand": "Luxie",
+    "category": "accessories",
+    "type": "brush set",
+    "name": "Eye Essential Brush Set - Rose Gold",
+    "description": "Create a variety of eye looks with this must-have set. From a classic smokey eye to the perfect winged eyeliner, this versatile kit will have you covered for all your favorite eye looks.",
+    "price": 50,
+    "img": ["/img/luxie-eyeessential.jpg", "/img/luxie-eyeessential2.jpg"]
+  },
+  {
+    "id": "milani-baked-blush-luminoso",
+    "brand": "Milani",
+    "category": "face",
+    "type": "blush",
+    "name": "Baked Blush - Luminoso",
+    "description": "Pigment packed powder blush which delivers a sheen of healthy luminosity. Applied to the apples of the cheeks, Baked Blush gives a sheer wash of soft colour for a naturally flushed complexion. Baked on Italian terracotta, the powder is incredibly finely milled for a silky application.",
+    "price": 13,
+    "img": [
+      "/img/milani-blushluminoso.png",
+      "/img/milani-blushluminoso2.png",
+      "/img/milani-blushluminoso3.png"
+    ]
+  },
+  {
+    "id": "milani-baked-bronzer-dolce",
+    "brand": "Milani",
+    "category": "face",
+    "type": "bronzer",
+    "name": "Baked Bronzer - Dolce",
+    "description": "A finely milled face and body bronzer embellished with threads of gold shimmer. Created with its home heritage of Milan in mind the Baked Bronzer is created on Italian terracotta tiles to provide its unique silk-like texture. Streak-free and easily blendable, the formula ensures effortless application for an easy to achieve bronzed summer glow.",
+    "price": 14,
+    "img": [
+      "/img/milani-bronzerdolce.png",
+      "/img/milani-bronzerdolce2.png",
+      "/img/milani-bronzerdolce3.png"
+    ]
+  },
+  {
+    "id": "milani-make-it-last-setting-spray",
+    "brand": "Milani",
+    "category": "face",
+    "type": "setting spray",
+    "name": "Make It Last Setting Spray",
+    "description": "Lock in makeup's just-applied look for all day wear up to 16 hours with Milani Make It Last Setting Spray Prime + Correct + Set. Spray under makeup for a mattifying primer and over makeup for lasting, crease-free, fade-free wear in any climate.",
+    "price": 14,
+    "img": ["/img/milani-settingspray.png", "/img/milani-settingspray2.png"]
+  },
+  {
+    "id": "nyx-butter-gloss-creme-brulee",
+    "brand": "NYX",
+    "category": "lips",
+    "type": "gloss",
+    "name": "Butter Gloss - Crème Brulée",
+    "description": "This buttery soft, silky smooth & decadent fan favorite lip gloss delivers sheer to medium coverage that melts onto your lips. Never sticky and always supple and kissable, plus it stays put and won't feather! Gorgeous on its own, over your favorite lipstick or lip liner and comes in a bunch of gloss shades. Our Butter Gloss adds the perfect pop of shine to your makeup look.",
+    "price": 6,
+    "img": [
+      "/img/nyx-butterlipcremebrulee.jpg",
+      "/img/nyx-butterlipcremebrulee2.jpg"
+    ]
+  },
+  {
+    "id": "physician-formula-the-healthy-foundation",
+    "brand": "Physician Formula",
+    "category": "face",
+    "type": "foundation",
+    "name": "The Healthy Foundation SPF20",
+    "description": "The Healthy Foundation SPF 20 by Physicians Formula is a long-wearing, buildable, and breathable foundation that provides lightweight, medium-to-full coverage with a healthy, satin finish.",
+    "price": 15,
+    "img": [
+      "/img/pf-healthyfoundation.jpg",
+      "/img/pf-healthyfoundation2.jpg",
+      "/img/pf-healthyfoundation3.jpg"
+    ]
+  },
+  {
+    "id": "physician-formula-murumuru-butter-bronzer",
+    "brand": "Physician Formula",
+    "category": "face",
+    "type": "bronzer",
+    "name": "Murumuru Butter Bronzer",
+    "description": "Physicians Formula Murumuru Butter Bronzer is an ultra-luxurious bronzer infused with Murumuru Butter, delivering a radiant Brazilian goddess glow! Moisturizing wonder features ultra-refined pearl and soft-focus pigments that smooth skin texture, brighten skin tone and deliver a gorgeous bronze finish.",
+    "price": 19,
+    "img": [
+      "/img/pf-butterbronzer.jpg",
+      "/img/pf-butterbronzer2.jpg",
+      "/img/pf-butterbronzer3.jpg"
+    ]
+  },
+  {
+    "id": "physician-formula-the-healthy-lip-velvet-finish-bare-with-me",
+    "brand": "Physician Formula",
+    "category": "lips",
+    "type": "liquid lipstick",
+    "name": "The Healthy Lip Velvet Finish - Bare With Me",
+    "description": "Discover the Physicians Formula The Healthy Lip Velvet Liquid Lipstick, a decadent mousse-like texture lipstick delivers high-impact colour that glides on for seamless colour. The cream formula features avocado oil and hyaluronic acid.",
+    "price": 8,
+    "img": ["/img/pf-healthylipstick.jpg", "/img/pf-healthylipstick2.jpg"]
+  },
+  {
+    "id": "physician-formula-murumuru-butter-bluch-vintage-rouge",
+    "brand": "Physician Formula",
+    "category": "face",
+    "type": "blush",
+    "name": "Murmuru Butter Blush - Vintage Rouge",
+    "description": "Discover the Physicians Formula Murumuru Butter Blush 7.5g a ultra-luxurious formula, infused with Murumuru Butter, delivers a radiant Brazilian goddess glow! Incredibly soft and ultra-creamy texture combines the best features of a powder and cream blush.",
+    "price": 15,
+    "img": [
+      "/img/pf-butterblush.jpg",
+      "/img/pf-butterblush2.jpg",
+      "/img/pf-butterblush3.jpg"
+    ]
+  },
+  {
+    "id": "tarte-shape-tape-concealer",
+    "brand": "Tarte",
+    "category": "face",
+    "type": "concealer",
+    "name": "Shape Tape Concealer",
+    "description": "Meet Tarte's iconic, Shape Tape Concealer & discover why one is sold every 12 seconds*! This vegan, full-coverage formula infused with tape technology instantly helps brighten, smooth & give the skin a firmer, more lifted look.",
+    "price": 26,
+    "img": ["/img/tarte-shapetape.jpg", "/img/tarte-shapetape2.jpg"]
+  },
+  {
+    "id": "tarte-amazonian-clay-12-hour-blush-sensual",
+    "brand": "Tarte",
+    "category": "face",
+    "type": "blush",
+    "name": "Amazonian Clay 12-Hour blush - Sensual",
+    "description": "An award-winning powder blush that contains long-wearing Amazonian clay, so pigment looks freshly applied all day.",
+    "price": 31,
+    "img": ["/img/tarte-blushsensual.jpg", "/img/tarte-blushsensual2.jpg"]
+  },
+  {
+    "id": "too-faced-hangover-primer",
+    "brand": "Too Faced",
+    "category": "face",
+    "type": "primer",
+    "name": "Hangover Primer",
+    "description": "Hangover is a revolutionary makeup primer infused with coconut water, probiotic-based ingredients, and skin revivers that work together to boost skin’s radiance, promote elasticity, and help hydrate while locking down makeup for fresher, longer, and more flawless wear.",
+    "price": 34,
+    "img": [
+      "/img/toofaced-hangoverprimer.png",
+      "/img/toofaced-hangoverprimer2.png"
+    ]
+  },
+  {
+    "id": "too-faced-peach-perfect-mattifying-setting-powder",
+    "brand": "Too Faced",
+    "category": "face",
+    "type": "setting powder",
+    "name": "Peach Perfect Mattifying Setting Powder",
+    "description": "This transfer-resistant, peach tinted-powder works to visibly brighten skin while creating a silky-smooth, matte finish that lasts up to 14 hours. For the first time in Too Faced history, they’ve created an entire line exclusively for Sephora. The Too Faced Peaches and Cream Comfort Matte Collection is infused with refreshing peaches and sweet fig milk—ingredients known for their hydrating and antioxidant-rich benefits—to help keep skin moisturized, comfortable, and beautifully matte.",
+    "price": 33,
+    "img": ["/img/toofaced-peachpowder.jpg", "/img/toofaced-peachpowder2.jpg"]
+  },
+  {
+    "id": "too-faced-better-than-sex-mascara",
+    "brand": "Too Faced",
+    "category": "eyes",
+    "type": "mascara",
+    "name": "Better Than Sex Mascara",
+    "description": "An intensely black voluptuous volume mascara for the sexiest, defined, multidimensional lashes possible.",
+    "price": 26,
+    "img": [
+      "/img/toofaced-betterthansex.png",
+      "/img/toofaced-betterthansex2.png"
+    ]
+  },
+  {
+    "id": "too-faced-better-than-sex-eyeliner",
+    "brand": "Too Faced",
+    "category": "eyes",
+    "type": "eyeliner",
+    "name": "Better Than Sex Eyeliner",
+    "description": "A cutting-edge liquid eyeliner that’s the easiest you’ll ever use, created to produce a sharp, fluid, smudge-proof line every time.",
+    "price": 23,
+    "img": ["/img/toofaced-btseyeliner.jpg", "/img/toofaced-btseyeliner.jpg"]
+  },
+  {
+    "id": "too-faced-born-this-way-foundation",
+    "brand": "Too Faced",
+    "category": "face",
+    "type": "foundation",
+    "name": "Born This Way Foundation",
+    "description": "An oil-free foundation that masterfully diffuses the line between makeup and skin with coverage so undetectable, they’ll think you were born this way.",
+    "price": 36,
+    "img": [
+      "/img/toofaced-bornthiswayfoundation.jpg",
+      "/img/toofaced-bornthiswayfoundation2.jpg"
+    ]
+  },
+  {
+    "id": "urban-decay-all-nighter-long-lasting-makeup-setting-spray",
+    "brand": "Urban Decay",
+    "category": "face",
+    "type": "setting spray",
+    "name": "All Nighter Long-Lasting Makeup Setting Spray",
+    "description": "With patented Temperature Control Technology, this weightless vegan mist lowers the temperature of your makeup—from foundation and concealer to eyeshadow and blush—to lock it in place. The result is smoother-looking skin and vibrant makeup that lasts all day or night.",
+    "price": 31,
+    "img": [
+      "/img/urbandecay-allnighterspray.jpg",
+      "/img/urbandecay-allnighterspray2.jpg"
+    ]
+  },
+  {
+    "id": "urban-decay-all-nighter-primer",
+    "brand": "Urban Decay",
+    "category": "face",
+    "type": "primer",
+    "name": "All Nighter Primer",
+    "description": "A smoothing and hydrating face primer that grips foundation into place and supports its staying power, so your look lasts all day.",
+    "price": 36,
+    "img": [
+      "/img/ud-allnighterprimer.jpg",
+      "/img/ud-allnighterprimer2.jpg",
+      "/img/ud-allnighterprimer3.jpg"
+    ]
+  }
+]
