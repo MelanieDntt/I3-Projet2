@@ -1,12 +1,12 @@
 h2 {
     font-family: 'Sriracha', cursive;
-    font-size: 25px;
+    font-size: 30px;
 }
 h3 {
-    font-size: 17px;
+    font-size: 18px;
 }
 h4 {
-    font-size: 16px;
+    font-size: 17px;
 }
 .outer {
     max-width: 100%;
@@ -46,4 +46,15 @@ h4 {
 #thumbs.owl-theme .owl-next, 
 #thumbs.owl-theme .owl-prev { 
     background:#333; 
+}
+
+
+#owl-demo {
+    .item {
+        img {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+    }
 }

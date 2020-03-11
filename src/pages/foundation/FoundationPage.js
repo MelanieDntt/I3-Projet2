@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './FoundationPage.scss';
 import { A } from 'hookrouter';
+import PropTypes from 'prop-types';
 
-const FoundationPage = () => {
+const FoundationPage = ({ addToBag }) => {
   const [makeup, setMakeup] = useState([]);
   useEffect(() => {
     fetch('/json/data.json')
@@ -27,13 +28,17 @@ const FoundationPage = () => {
                   €
                 </p>
               </A>
-              <button type="button" className="waves-effect waves-light btn white black-text">Add to bag</button>
+              <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => addToBag(item)}>Add to bag</button>
             </div>
           ) : ''))}
         </div>
       </section>
     </main>
   );
+};
+
+FoundationPage.propTypes = {
+  addToBag: PropTypes.func,
 };
 
 export default FoundationPage;

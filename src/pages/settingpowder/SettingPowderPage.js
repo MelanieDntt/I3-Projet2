@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './SettingPowderPage.scss';
 import { A } from 'hookrouter';
+import PropTypes from 'prop-types';
 
-const SettingPowderPage = () => {
+const SettingPowderPage = ({ addToBag }) => {
   const [makeup, setMakeup] = useState([]);
   useEffect(() => {
     fetch('/json/data.json')
@@ -17,7 +18,7 @@ const SettingPowderPage = () => {
         <div className="row">
           {makeup.map((item) => (item.type === 'setting powder' ? (
             <div key={item.id} className="col s6 m6 l3">
-              <A href={`wetting_powder/${item.id}`}>
+              <A href={`setting_powder/${item.id}`}>
                 <img src={item.img[0]} alt="test" />
                 <h3>{item.name}</h3>
                 <p>{item.brand}</p>
@@ -27,13 +28,17 @@ const SettingPowderPage = () => {
                   €
                 </p>
               </A>
-              <button type="button" className="waves-effect waves-light btn white black-text">Add to bag</button>
+              <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => addToBag(item)}>Add to bag</button>
             </div>
           ) : ''))}
         </div>
       </section>
     </main>
   );
+};
+
+SettingPowderPage.propTypes = {
+  addToBag: PropTypes.func,
 };
 
 export default SettingPowderPage;

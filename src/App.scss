@@ -1,6 +1,11 @@
 A {
     color: #000;
 }
+
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
+}
 .sidenav-trigger {
     position: fixed;
     top: 0;

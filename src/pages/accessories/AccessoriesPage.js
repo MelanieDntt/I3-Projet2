@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './AccessoriesPage.scss';
 import { A } from 'hookrouter';
+import PropTypes from 'prop-types';
 
-const AccessoriesPage = () => {
+const AccessoriesPage = ({ addToBag }) => {
   const [makeup, setMakeup] = useState([]);
   useEffect(() => {
     fetch('/json/data.json')
@@ -26,14 +27,18 @@ const AccessoriesPage = () => {
                   {' '}
                   €
                 </p>
-                <button type="button" className="waves-effect waves-light btn white black-text">Add to bag</button>
               </A>
+              <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => addToBag(item)}>Add to bag</button>
             </div>
           ) : ''))}
         </div>
       </section>
     </main>
   );
+};
+
+AccessoriesPage.propTypes = {
+  addToBag: PropTypes.func,
 };
 
 export default AccessoriesPage;

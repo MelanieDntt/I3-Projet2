@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './PrimerPage.scss';
 import { A } from 'hookrouter';
+import PropTypes from 'prop-types';
 
-const PrimerPage = () => {
+const PrimerPage = ({ addToBag }) => {
   const [makeup, setMakeup] = useState([]);
   useEffect(() => {
     fetch('/json/data.json')
@@ -27,13 +28,17 @@ const PrimerPage = () => {
                   €
                 </p>
               </A>
-              <button type="button" className="waves-effect waves-light btn white black-text">Add to bag</button>
+              <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => addToBag(item)}>Add to bag</button>
             </div>
           ) : ''))}
         </div>
       </section>
     </main>
   );
+};
+
+PrimerPage.propTypes = {
+  addToBag: PropTypes.func,
 };
 
 export default PrimerPage;

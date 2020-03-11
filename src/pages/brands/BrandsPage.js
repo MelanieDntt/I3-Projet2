@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './BrandsPage.scss';
+import { A } from 'hookrouter';
 
 const BrandsPage = () => {
   const [makeup, setMakeup] = useState([]);
@@ -18,15 +19,7 @@ const BrandsPage = () => {
       <div className="container brands">
         <h1>Brands</h1>
         <ul>
-          {/* <li>Anastasia Beverly Hills</li>
-          <li>Beautyblender</li>
-          <li>ColourPop</li>
-          <li>Luxie</li>
-          <li>Milani</li>
-          <li>Tarte</li>
-          <li>Too Faced</li>
-          <li>Urban Decay</li> */}
-          {brandsfinal.map((item) => <li key={item}>{item}</li>)}
+          {brandsfinal.map((brand) => <li key={brand}><A href={`brands/${brand}`}>{brand}</A></li>)}
         </ul>
       </div>
     </main>
