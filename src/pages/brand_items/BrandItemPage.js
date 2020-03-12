@@ -32,7 +32,7 @@ const BrandItemPage = ({ brand, addToBag }) => {
                 <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => addToBag(item)}>Add to bag</button>
               </div>
             </>
-          ) : <h1>Not Found Page</h1>))}
+          ) : ''))}
         </div>
       </section>
     </main>

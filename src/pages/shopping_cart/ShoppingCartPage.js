@@ -90,7 +90,7 @@ const ShoppingCartPage = ({ oldBag, deleteFromBag }) => {
 
 ShoppingCartPage.propTypes = {
   oldBag: PropTypes.array.isRequired,
-  deleteFromBag: PropTypes.func,
+  deleteFromBag: PropTypes.func.isRequired,
 };
 
 export default ShoppingCartPage;

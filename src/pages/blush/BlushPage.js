@@ -31,7 +31,7 @@ const BlushPage = ({ addToBag }) => {
               </A>
               <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => addToBag(item)}>Add to bag</button>
             </div>
-          ) : <NotFoundPage />))}
+          ) : ''))}
         </div>
       </section>
     </main>
@@ -39,7 +39,7 @@ const BlushPage = ({ addToBag }) => {
 };
 
 BlushPage.propTypes = {
-  addToBag: PropTypes.func,
+  addToBag: PropTypes.func.isRequired,
 };
 
 export default BlushPage;

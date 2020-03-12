@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './BronzerPage.scss';
 import { A } from 'hookrouter';
 import PropTypes from 'prop-types';
-import NotFoundPage from '../NotFoundPage';
 
 const BronzerPage = ({ addToBag }) => {
   const [makeup, setMakeup] = useState([]);
@@ -31,7 +30,7 @@ const BronzerPage = ({ addToBag }) => {
               </A>
               <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => addToBag(item)}>Add to bag</button>
             </div>
-          ) : <NotFoundPage />))}
+          ) : ''))}
         </div>
       </section>
     </main>
@@ -39,7 +38,7 @@ const BronzerPage = ({ addToBag }) => {
 };
 
 BronzerPage.propTypes = {
-  addToBag: PropTypes.func,
+  addToBag: PropTypes.func.isRequired,
 };
 
 export default BronzerPage;
