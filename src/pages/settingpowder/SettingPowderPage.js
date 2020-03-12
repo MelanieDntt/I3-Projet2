@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './SettingPowderPage.scss';
 import { A } from 'hookrouter';
 import PropTypes from 'prop-types';
+import NotFoundPage from '../NotFoundPage';
 
 const SettingPowderPage = ({ addToBag }) => {
   const [makeup, setMakeup] = useState([]);
@@ -30,7 +31,7 @@ const SettingPowderPage = ({ addToBag }) => {
               </A>
               <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => addToBag(item)}>Add to bag</button>
             </div>
-          ) : ''))}
+          ) : <NotFoundPage />))}
         </div>
       </section>
     </main>

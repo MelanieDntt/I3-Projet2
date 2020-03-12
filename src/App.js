@@ -30,8 +30,10 @@ function App() {
   const addToBag = (item) => {
     setBag((old) => [...old, item]);
   };
+  const deleteFromBag = (item) => {
+    setBag(bag.filter((old) => old !== item));
+  };
   console.log('bag changed', bag);
-  console.log(bag.length);
 
   const routes = {
     '/': () => <HomePage />,
@@ -66,7 +68,7 @@ function App() {
     '/accessories/:id': ({ id }) => <ProductDetails id={id} addToBag={addToBag} />,
     '/brands/:brand': ({ brand }) => <BrandItemPage brand={brand} addToBag={addToBag} />,
     '/brands/:brand/:id': ({ brand, id }) => <ProductDetails brand={brand} id={id} addToBag={addToBag} />,
-    '/bag': () => <ShoppingCartPage bag={bag} />,
+    '/bag': () => <ShoppingCartPage oldBag={bag} deleteFromBag={deleteFromBag} />,
   };
 
   const routeResult = useRoutes(routes);
@@ -113,7 +115,9 @@ function App() {
               <ul className="collapsible">
                 <li>
                   <div className="collapsible-header">
-                    Makeup
+                    <ul>
+                      <li>Makeup</li>
+                    </ul>
                   </div>
                   <div className="collapsible-body">
                     <ul>

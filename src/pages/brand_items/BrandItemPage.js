@@ -10,16 +10,17 @@ const BrandItemPage = ({ brand, addToBag }) => {
       .then((r) => r.json())
       .then((data) => setMakeup(data));
   }, []);
+  const newBrand = brand.replace(/%20/g, ' ');
 
   return (
     <main>
       <section className="container">
         <div className="row">
-          {makeup.map((item) => (item.brand === brand ? (
+          {makeup.map((item) => (item.brand === newBrand ? (
             <>
-              <div className="col s6 m6 l3">
-                <A href={`/brands/${item.brand}/${item.id}`} key={item.name}>
-                  <img src={item.img[0]} alt="test" />
+              <div className="col s6 m6 l3" key={item.name}>
+                <A href={`/brands/${item.brand}/${item.id}`}>
+                  <img src={item.img[0]} alt={item.id} />
                   <h3>{item.name}</h3>
                   <p>{item.brand}</p>
                   <p>
@@ -31,7 +32,7 @@ const BrandItemPage = ({ brand, addToBag }) => {
                 <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => addToBag(item)}>Add to bag</button>
               </div>
             </>
-          ) : ''))}
+          ) : <h1>Not Found Page</h1>))}
         </div>
       </section>
     </main>

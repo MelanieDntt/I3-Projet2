@@ -5,6 +5,7 @@ import './ProductDetails.scss';
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import 'owl.carousel/dist/owl.carousel';
 import PropTypes from 'prop-types';
+import NotFoundPage from '../NotFoundPage';
 
 const ProductDetails = ({ id, addToBag }) => {
   const [makeup, setMakeup] = useState([]);
@@ -49,7 +50,7 @@ const ProductDetails = ({ id, addToBag }) => {
               <p>{item.description}</p>
             </div>
           )
-          : ''))}
+          : <NotFoundPage />))}
       </section>
     </main>
   );
