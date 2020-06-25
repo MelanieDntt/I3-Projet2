@@ -1,7 +1,36 @@
+@import "../../design-mediaqueries/mediaqueries";
+
 main {
     padding-top: 30px;
+    flex: 1;
 }
 h1 {
     font-size: 40px;
     font-family: 'Sriracha', cursive;
+}
+.lister-grid {
+    display: grid;
+    grid-gap: 80px 2.4%;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    @include lg {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.lister-div-container {
+    position: relative;
+}
+.lister-div {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.button-container {
+    position: relative;
+    display: inherit;
+    margin-top: auto;
+}
+.brand-uppercase {
+    text-transform: uppercase;
 }

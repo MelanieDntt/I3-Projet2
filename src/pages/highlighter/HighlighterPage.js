@@ -15,20 +15,28 @@ const HighlighterPage = ({ addToBag }) => {
     <main>
       <section className="container">
         <h1>Highlighter</h1>
-        <div className="row">
+        <div className="lister-grid">
           {makeup.map((item) => (item.type === 'highlighter' ? (
-            <div key={item.id} className="col s6 m6 l3">
-              <A href={`/highlighter/${item.id}`}>
-                <img src={item.img[0]} alt="test" />
-                <h3>{item.name}</h3>
-                <p>{item.brand}</p>
-                <p>
-                  {item.price}
-                  {' '}
-                  €
-                </p>
-              </A>
-              <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => addToBag(item)}>Add to bag</button>
+            <div className="lister-div-container">
+              <div key={item.id} className="lister-div">
+                <A href={`/highlighter/${item.id}`}>
+                  <div>
+                    <img src={item.img[0]} alt="test" />
+                  </div>
+                  <div>
+                    <h3>{item.name}</h3>
+                    <p className="brand-uppercase">{item.brand}</p>
+                    <p>
+                      {item.price}
+                      {' '}
+                      €
+                    </p>
+                  </div>
+                </A>
+                <div className="button-container">
+                  <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => { addToBag(item); item.quantity = 1; }}>Add to bag</button>
+                </div>
+              </div>
             </div>
           ) : ''))}
         </div>

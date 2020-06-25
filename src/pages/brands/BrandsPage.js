@@ -18,9 +18,13 @@ const BrandsPage = () => {
     <main>
       <div className="container brands">
         <h1>Brands</h1>
-        <ul>
-          {brandsfinal.map((brand) => <li key={brand}><A href={`brands/${brand}`}>{brand}</A></li>)}
-        </ul>
+        <div>
+          <table>
+            <tbody>
+              {brandsfinal.map((brand) => <tr key={brand}><td><A href={`brands/${brand}`}>{brand}</A></td></tr>)}
+            </tbody>
+          </table>
+        </div>
       </div>
     </main>
   );

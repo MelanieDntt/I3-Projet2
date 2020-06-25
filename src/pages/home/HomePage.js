@@ -1,6 +1,7 @@
 import React from 'react';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import './HomePage.scss';
+import { A } from 'hookrouter';
 
 const HomePage = () => {
   document.addEventListener('DOMContentLoaded', () => {
@@ -15,16 +16,16 @@ const HomePage = () => {
         <div className="slider">
           <ul className="slides">
             <li>
-              <img src="/img/anastasia-beverly-hills.jpg" alt="test" />
+              <A href="brands/Anastasia%20Beverly%20Hills"><img src="/img/anastasia-beverly-hills.jpg" alt="test" /></A>
             </li>
             <li>
-              <img src="/img/coloupop.jpg" alt="test" />
+              <A href="brands/ColourPop"><img src="/img/coloupop.jpg" alt="test" /></A>
             </li>
             <li>
-              <img src="/img/tarte.jpg" alt="test" />
+              <A href="/concealer/tarte-shape-tape-concealer"><img src="/img/tarte.jpg" alt="test" /></A>
             </li>
             <li>
-              <img src="/img/milani.jpg" alt="test" />
+              <A href="/brands/Milani"><img src="/img/milani.jpg" alt="test" /></A>
             </li>
           </ul>
         </div>
@@ -33,10 +34,10 @@ const HomePage = () => {
         <div className="slider">
           <ul className="slides">
             <li>
-              <img src="/img/abh-amrezyplt.jpg" alt="test" />
+              <A href="/eyeshadow_palette/anastasia-beverly-hills-amrezy-palette"><img src="/img/abh-amrezyplt.jpg" alt="test" /></A>
             </li>
             <li>
-              <img src="/img/ub-allnighterprimer.jpg" alt="test" />
+              <A href="/primer/urban-decay-all-nighter-primer"><img src="/img/ub-allnighterprimer.jpg" alt="test" /></A>
             </li>
             <li>
               <img src="/img/beautyblender-wave.jpg" alt="test" />

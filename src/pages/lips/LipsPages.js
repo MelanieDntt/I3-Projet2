@@ -28,7 +28,7 @@ const LipsPage = ({ addToBag }) => {
                   €
                 </p>
               </A>
-              <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => addToBag(item)}>Add to bag</button>
+              <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => { addToBag(item); item.quantity = 1; }}>Add to bag</button>
             </div>
           ) : ''))}
         </div>

@@ -5,8 +5,7 @@ import PropTypes from 'prop-types';
 
 const ShoppingCartPage = ({ oldBag, deleteFromBag }) => {
   const [bag, setBag] = useState(oldBag);
-  const [total, setTotal] = useState(oldBag.reduce((acc, res) => acc + res.price, 0));
-  const quantity = 1;
+  const [total, setTotal] = useState(oldBag.reduce((acc, res) => acc + (res.price * res.quantity), 0));
 
   console.log(`au lancement, le total est de ${total}`);
 
@@ -27,6 +26,24 @@ const ShoppingCartPage = ({ oldBag, deleteFromBag }) => {
 
     console.log(bag);
     alert('DELETED');
+  };
+
+  const decrementQuantity = (item) => {
+    if (item.quantity > 1) {
+      item.quantity -= 1;
+      setTotal(total - item.price);
+    } else {
+      deleteFromBag(item);
+      setBag(bag.filter((product) => product.id !== item.id));
+      setTotal(total - item.price);
+    }
+    console.log(item.quantity);
+  };
+
+  const incrementQuantity = (item) => {
+    item.quantity += 1;
+    setTotal(total + item.price);
+    console.log(item.quantity);
   };
 
   if (bag.length === 0) {
@@ -62,14 +79,26 @@ const ShoppingCartPage = ({ oldBag, deleteFromBag }) => {
                   <br />
                   {item.name}
                 </td>
-                <td>{quantity}</td>
+                <td>
+                  <div>
+                    <button type="button" onClick={() => decrementQuantity(item)} className="btn-quantity">
+                      -
+                    </button>
+                    {item.quantity}
+                    <button type="button" onClick={() => incrementQuantity(item)} className="btn-quantity">
+                      +
+                    </button>
+                  </div>
+                </td>
                 <td>
                   {item.price}
                   {' '}
                   €
                 </td>
                 <td>
-                  <button type="button" onClick={() => { deleteItem(item); deleteFromBag(item); }} className="z-depth-0 transparent btn-flat"><i className="material-icons red-text accent-4-text">clear</i></button>
+                  <button type="button" onClick={() => { deleteItem(item); deleteFromBag(item); }} className="z-depth-0 transparent btn-flat">
+                    <i className="material-icons red-text accent-4-text">clear</i>
+                  </button>
                 </td>
               </tr>
             ))}

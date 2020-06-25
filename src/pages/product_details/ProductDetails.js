@@ -36,7 +36,7 @@ const ProductDetails = ({ id, addToBag }) => {
                 <div className="item"><img src={item.img[1]} alt="test" /></div>
               </div> */}
 
-              <div><img src={item.img[0]} alt={item.id} /></div>
+              <div className="img-product"><img src={item.img[0]} alt={item.id} /></div>
               <h2>{item.brand}</h2>
               <h3>{item.name}</h3>
               <p>
@@ -44,7 +44,7 @@ const ProductDetails = ({ id, addToBag }) => {
                 {' '}
                 €
               </p>
-              <button type="button" className="waves-effect waves-light btn light-green lighten-1" onClick={() => addToBag(item)}>Add to bag</button>
+              <button type="button" className="waves-effect waves-light btn light-green lighten-1" onClick={() => { addToBag(item); item.quantity = 1; }}>Add to bag</button>
               <h4>Description</h4>
               <p>{item.description}</p>
             </div>

@@ -1,7 +1,28 @@
+@import "../../design-mediaqueries/mediaqueries";
+
+main {
+    flex: 1;
+}
 h1 {
     font-family: 'Sriracha', cursive;
 }
 .total {
     display: flex;
     justify-content: flex-end;
+}
+.btn-quantity {
+    background-color: #fff;
+    margin: 2px;
+    @include lg {
+        margin: 5px;
+    }
+    border: none;
+    width: 20px;
+    @include lg {
+        width: 25px;
+    }
+    border: grey solid 0.1px;
+    &:hover {
+        cursor: pointer;
+    }
 }

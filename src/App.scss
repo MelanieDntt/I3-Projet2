@@ -2,10 +2,6 @@ A {
     color: #000;
 }
 
-.flex-right {
-    display: flex;
-    justify-content: flex-end;
-}
 .sidenav-trigger {
     position: fixed;
     top: 0;
@@ -13,4 +9,18 @@ A {
 }
 .closenav {
     cursor: pointer;
+}
+.site-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.hidden {
+    display: none;
+}
+.makeup-margin-left {
+    margin-left: 5%;
+}
+.makeup-margin-left-10 {
+    margin-left: 10%;
 }

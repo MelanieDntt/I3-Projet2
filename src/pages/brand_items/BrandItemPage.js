@@ -15,21 +15,30 @@ const BrandItemPage = ({ brand, addToBag }) => {
   return (
     <main>
       <section className="container">
-        <div className="row">
+        <h1>{newBrand}</h1>
+        <div className="lister-grid">
           {makeup.map((item) => (item.brand === newBrand ? (
             <>
-              <div className="col s6 m6 l3" key={item.name}>
-                <A href={`/brands/${item.brand}/${item.id}`}>
-                  <img src={item.img[0]} alt={item.id} />
-                  <h3>{item.name}</h3>
-                  <p>{item.brand}</p>
-                  <p>
-                    {item.price}
-                    {' '}
-                    €
-                  </p>
-                </A>
-                <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => addToBag(item)}>Add to bag</button>
+              <div className="lister-div-container">
+                <div className="lister-div" key={item.id}>
+                  <A href={`/brands/${item.brand}/${item.id}`}>
+                    <div>
+                      <img src={item.img[0]} alt="test" />
+                    </div>
+                    <div>
+                      <h3>{item.name}</h3>
+                      <p className="brand-uppercase">{item.brand}</p>
+                      <p>
+                        {item.price}
+                        {' '}
+                        €
+                      </p>
+                    </div>
+                  </A>
+                  <div className="button-container">
+                    <button type="button" className="waves-effect waves-light btn white black-text" onClick={() => { addToBag(item); item.quantity = 1; }}>Add to bag</button>
+                  </div>
+                </div>
               </div>
             </>
           ) : ''))}
